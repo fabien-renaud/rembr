@@ -1,11 +1,12 @@
 import React from 'react';
-import {NavBar} from 'components';
+import {Layout} from 'components';
 
-export default function Profile() {
+const Profile = () => {
     return (
-        <div>
+        <Layout title="Profile">
             <h1>Profile page</h1>
-            <NavBar />
-        </div>
+        </Layout>
     )
 };
+
+export default Profile;

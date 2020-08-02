@@ -1,11 +1,12 @@
 import React from 'react';
-import {NavBar} from 'components';
+import {Layout} from 'components';
 
-export default function Decks() {
+const Decks = () => {
     return (
-        <div>
+        <Layout title="Decks">
             <h1>Decks page</h1>
-            <NavBar />
-        </div>
+        </Layout>
     )
 };
+
+export default Decks;

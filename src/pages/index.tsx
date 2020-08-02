@@ -1,11 +1,12 @@
 import React from 'react';
-import {NavBar} from 'components';
+import {Layout} from 'components';
 
-export default function Home() {
+const Home = () => {
     return (
-        <div>
+        <Layout title="Home">
             <h1>Home page</h1>
-            <NavBar />
-        </div>
+        </Layout>
     )
 };
+
+export default Home;
