@@ -1,6 +1,11 @@
 {
   "name": "rembr",
   "version": "0.1.0",
+  "description": "Node API for rembr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabien-renaud/rembr.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
