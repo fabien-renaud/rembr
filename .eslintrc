@@ -7,18 +7,22 @@
         "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
-    "plugins": [
-        "prettier",
-        "@typescript-eslint"
-    ],
+    "plugins": ["prettier", "@typescript-eslint"],
     "settings": {
         "import/resolver": {
             "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+                "extensions": [".js", ".jsx", ".ts", ".tsx"],
+                "paths": ["src"]
             }
         }
     },
     "rules": {
-        "prettier/prettier": ["error"]
+        "indent": ["error", 4],
+        "import/extensions": ["error", "ignorePackages", {"ts": "never", "tsx": "never"}],
+        "prettier/prettier": ["error"],
+        "react/jsx-filename-extension": ["error", {"extensions": [".tsx"]}],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "react/jsx-one-expression-per-line": ["error", {"allow": "single-child"}]
     }
 }

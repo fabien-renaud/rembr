@@ -3,17 +3,17 @@ import Head from 'next/head';
 import {NavBar} from 'components';
 
 type LayoutProps = {
-    children: ReactNode,
-    title?: string
-}
+    children: ReactNode;
+    title?: string;
+};
 
-const Layout = (props: LayoutProps) => {
+const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
     const {children, title} = props;
-    
+
     return (
         <>
             <Head>
-                <title>{title || "rembr"}</title>
+                <title>{title || 'rembr'}</title>
             </Head>
             <NavBar />
             {children}

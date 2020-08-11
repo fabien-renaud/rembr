@@ -2,7 +2,7 @@ import React from 'react';
 import Document, {Head, Html, Main, NextScript} from 'next/document';
 
 class Doc extends Document {
-    render() {
+    render(): JSX.Element {
         return (
             <Html>
                 <Head>
@@ -13,7 +13,7 @@ class Doc extends Document {
                     <NextScript />
                 </body>
             </Html>
-        )
+        );
     }
 }
 
