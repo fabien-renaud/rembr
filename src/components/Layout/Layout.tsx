@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
     return (
         <>
             <Head>
-                <title>{title || 'rembr'}</title>
+                <title>{`${title} | rembr` || 'rembr'}</title>
             </Head>
             <NavBar />
             {children}
