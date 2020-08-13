@@ -32,6 +32,16 @@ const NavBar: React.FC = () => {
                     <a>Profile</a>
                 </Link>
             </li>
+            <li>
+                <Link href="/api/login">
+                    <a>Login</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/api/logout">
+                    <a>Logout</a>
+                </Link>
+            </li>
         </ul>
     );
 };
