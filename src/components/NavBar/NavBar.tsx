@@ -1,8 +1,9 @@
 import React from 'react';
+import {NextPage} from 'next';
 import Link from 'next/link';
 import styles from './NavBar.module.scss';
 
-const NavBar: React.FC = () => {
+const NavBar: NextPage = () => {
     return (
         <ul className={styles.navbar}>
             <li>

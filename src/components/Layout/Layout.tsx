@@ -1,4 +1,5 @@
 import React, {ReactNode} from 'react';
+import {NextPage} from 'next';
 import Head from 'next/head';
 import {NavBar} from 'components';
 
@@ -7,7 +8,7 @@ type LayoutProps = {
     title?: string;
 };
 
-const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
+const Layout: NextPage<LayoutProps> = (props: LayoutProps) => {
     const {children, title} = props;
 
     return (

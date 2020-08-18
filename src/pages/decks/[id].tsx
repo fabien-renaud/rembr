@@ -1,8 +1,9 @@
 import React from 'react';
+import {NextPage} from 'next';
 import {useRouter} from 'next/router';
 import {Layout} from 'components';
 
-const Decks: React.FC = () => {
+const Decks: NextPage = () => {
     const router = useRouter();
 
     return (
